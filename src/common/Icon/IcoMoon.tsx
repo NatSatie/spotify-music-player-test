@@ -5,6 +5,7 @@ import { ReactComponent as ForwardIcon } from './icomoon-music-icons/SVG/forward
 import { ReactComponent as BackwardIcon } from './icomoon-music-icons/SVG/backward2.svg';
 import { ReactComponent as StopIcon } from './icomoon-music-icons/SVG/stop2.svg';
 import { IconEnum } from './IconEnum';
+import { BevelText, Button, Container } from './IconMoonStyle';
 
 interface IcoMoonProps {
   icon: IconEnum,
@@ -28,10 +29,14 @@ const IcoMoon: React.FC<IcoMoonProps>  = (props: IcoMoonProps) => {
     }
   }
 
+  const onClick = () => {
+    console.log("Empty action");
+  }
+
   return(
-    <div>
+    <Container onClick={onClick}>
       {getIcon(props.icon)}
-    </div>
+    </Container>
   );
 }
 
