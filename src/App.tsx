@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import MusicButton from './components/MusicButton/MusicButton';
+import Login from './components/Login/Login';
 
 function App() {
-  const logo = require("./logo.svg") as string;
-  
   return (
     <div className="App">
-      <p>sample test</p>
-      <MusicButton />
+      <Login/>
     </div>
   );
 }

@@ -5,13 +5,13 @@ import { ReactComponent as ForwardIcon } from './icomoon-music-icons/SVG/forward
 import { ReactComponent as BackwardIcon } from './icomoon-music-icons/SVG/backward2.svg';
 import { ReactComponent as StopIcon } from './icomoon-music-icons/SVG/stop2.svg';
 import { IconEnum } from './IconEnum';
-import { BevelText, Button, Container } from './IconMoonStyle';
+import { Container } from './IconMoonStyle';
 
 interface IcoMoonProps {
   icon: IconEnum,
 }
 
-const IcoMoon: React.FC<IcoMoonProps>  = (props: IcoMoonProps) => {
+const IconMoon: React.FC<IcoMoonProps>  = (props: IcoMoonProps) => {
   const getIcon = (icon: IconEnum) => {
     switch(icon){
       case IconEnum.PLAY:
@@ -40,4 +40,4 @@ const IcoMoon: React.FC<IcoMoonProps>  = (props: IcoMoonProps) => {
   );
 }
 
-export default IcoMoon;
+export default IconMoon;
