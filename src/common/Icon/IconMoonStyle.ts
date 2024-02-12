@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components'
-
+import styled from 'styled-components'
 
 export const BevelText = styled.div`
   display: flex;

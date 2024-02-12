@@ -1,5 +1,5 @@
 import React from 'react';
-import IcoMoon from '../../common/Icon/IcoMoon';
+import IcoMoon from '../../common/Icon/IconMoon';
 import { IconEnum } from '../../common/Icon/IconEnum';
 import { Container } from './MusicButtonStyle';
 
